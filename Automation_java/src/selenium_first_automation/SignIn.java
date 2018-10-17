@@ -52,17 +52,15 @@ public class SignIn {
 		
 		
 		//Personalize : unable to click
-		ffdriver.findElementByLinkText("//a[contains(text(),'Personalize']").click();
+		//ffdriver.findElementByLinkText("//a[contains(text(),'Personalize']").click();
 		//ffdriver.findElementByXPath("//a[@href='href='https://www.shutterfly.com/creationpath/bundle/views/type/3/group/3?bundleId=3&productCode=1277535&categoryCode=60412&brand=WPD&skuCode=1277536&sizeIds=23&occasionIds=13&styleIds=779&addOns=FOIL_COLOR%3Agold_foil%2CCARD_SIZE_ID%3A23%2CPAPER_TYPE%3ARegular%2CPAPER_FINISH%3AMatte%2CTRIM%3ARegular&qty=75&useProcSimple=true']").click();
 		//ffdriver.close();
 		//ffdriver.findElementById("stringField-bride_name").sendKeys("Dharti");
+		
+		
+		ffdriver.findElementByXPath("//div[@class='social-personalize-section']/a[@class='button primary-button']").click();
+		
 		}
-	 //fill data
-
-
-	
-	   
-	   
 	 
 	/*@Test
 	public void SignIn_valid(){
