@@ -42,6 +42,8 @@ public class SignIn {
 		ffdriver.findElementById("password").sendKeys("Krunal1307");
 		ffdriver.findElementById("signInButton").click();
 	
+	
+		
 		//search
 		ffdriver.findElementById("srchTxtField").sendKeys("foil card");
 		ffdriver.findElementByClassName("srch_go").click();
@@ -51,14 +53,15 @@ public class SignIn {
 		ffdriver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		
-		//Personalize : unable to click
-		//ffdriver.findElementByLinkText("//a[contains(text(),'Personalize']").click();
-		//ffdriver.findElementByXPath("//a[@href='href='https://www.shutterfly.com/creationpath/bundle/views/type/3/group/3?bundleId=3&productCode=1277535&categoryCode=60412&brand=WPD&skuCode=1277536&sizeIds=23&occasionIds=13&styleIds=779&addOns=FOIL_COLOR%3Agold_foil%2CCARD_SIZE_ID%3A23%2CPAPER_TYPE%3ARegular%2CPAPER_FINISH%3AMatte%2CTRIM%3ARegular&qty=75&useProcSimple=true']").click();
-		//ffdriver.close();
-		//ffdriver.findElementById("stringField-bride_name").sendKeys("Dharti");
-		
-		
+		//Personalize : card
 		ffdriver.findElementByXPath("//div[@class='social-personalize-section']/a[@class='button primary-button']").click();
+		ffdriver.findElementById("stringField-bride_name").sendKeys("Dharti Rathod");
+		ffdriver.findElementById("stringField-groom_name").sendKeys("Krunal Shah");
+		ffdriver.findElementById("dateField-event_date").sendKeys("01222019");
+		ffdriver.findElementById("stringField-city").sendKeys("Vadodara");
+		ffdriver.findElementById("stringField-state_province").sendKeys("Gujarat");
+		ffdriver.findElementsByXPath("//a[contains(text(),'Done')]");
+		//System.out.println("found xpath");
 		
 		}
 	 

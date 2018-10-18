@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_first_automation.Personalise_card">
+      <class name="selenium_first_automation.SignIn">
         <methods>
-          <include name="personalize_card"/>
+          <include name="FFDriver"/>
         </methods>
-      </class> <!-- selenium_first_automation.Personalise_card -->
+      </class> <!-- selenium_first_automation.SignIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
